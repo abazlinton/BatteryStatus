@@ -13,6 +13,7 @@
 		FA1590FB2602BAD8009284CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1590FA2602BAD8009284CB /* Preview Assets.xcassets */; };
 		FA1591072602BAD8009284CB /* YaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1591062602BAD8009284CB /* YaTests.swift */; };
 		FA1591122602BAD8009284CB /* YaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1591112602BAD8009284CB /* YaUITests.swift */; };
+		FAEDEDDF260FB0B8005906EB /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDEDDE260FB0B8005906EB /* ApplicationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FA15910D2602BAD8009284CB /* YaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1591112602BAD8009284CB /* YaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaUITests.swift; sourceTree = "<group>"; };
 		FA1591132602BAD8009284CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEDEDDE260FB0B8005906EB /* ApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1590F32602BAD7009284CB /* YaApp.swift */,
+				FAEDEDDE260FB0B8005906EB /* ApplicationDelegate.swift */,
 				FA1590F52602BAD7009284CB /* ContentView.swift */,
 				FA1590F72602BAD8009284CB /* Assets.xcassets */,
 				FA1590FC2602BAD8009284CB /* Info.plist */,
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					FA1590EF2602BAD7009284CB = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					FA1591012602BAD8009284CB = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1590F62602BAD7009284CB /* ContentView.swift in Sources */,
+				FAEDEDDF260FB0B8005906EB /* ApplicationDelegate.swift in Sources */,
 				FA1590F42602BAD7009284CB /* YaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ya/Ya.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -431,6 +437,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.Ya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ya/Ya-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -440,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Ya/Ya.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -453,6 +463,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.Ya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ya/Ya-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
